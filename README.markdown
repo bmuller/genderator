@@ -12,7 +12,7 @@ This Python package uses the underlying data from the program "gender" by Jorg M
 
 I18N is fully supported:
 
-    >>> d.getGender('Álfrún') == FEMALE
+    >>> d.getGender(u'Álfrún') == FEMALE
     True
     >>> d.getGender(u'\301lfr\372n') == FEMALE
     True
