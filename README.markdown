@@ -10,6 +10,14 @@ This Python package uses the underlying data from the program "gender" by Jorg M
     >>> d.getGender('Pauley') == ANDROGYNOUS
     True
 
+I18N is fully supported:
+
+    >>> d.getGender('Álfrún') == FEMALE
+    True
+    >>> d.getGender(u'\301lfr\372n') == FEMALE
+    True
+
+
 If you have an alterative data file, you can pass that in as an optional argument to the Detector.
 
 Try to avoid creating many Detectors, as each creation means reading in the data file.
