@@ -7,7 +7,7 @@ This Python package uses the underlying data from the program "gender" by Jorg M
     True
     >>> d.getGender('Sally') == FEMALE
     True
-    >>> d.getGender('Pat') == ANDROGYNOUS
+    >>> d.getGender('Pauley') == ANDROGYNOUS
     True
 
 If you have an alterative data file, you can pass that in as an optional argument to the Detector.
