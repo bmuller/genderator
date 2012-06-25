@@ -6,13 +6,13 @@ ANDROGYNOUS = 2
 
 class Detector:
     def __init__(self, fname=None):
-        self.fname = fname or os.path.join(os.path.dirname(__file__), 'data', "nam_dict.txt")
-        self.reparse()
+        fname = fname or os.path.join(os.path.dirname(__file__), 'data', "nam_dict.txt")
+        self.parse(fname)
 
 
-    def reparse(self):
+    def parse(self, fname):
         self.names = {}
-        f = codecs.open(self.fname, encoding='iso8859-1')
+        f = codecs.open(fname, encoding='iso8859-1')
         line = f.readline()
         while line:
             self.eatNameLine(line)
